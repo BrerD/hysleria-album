@@ -6,8 +6,8 @@ import random
 import math
 import turtle
 from turtle import *
-import pyAudioAnalysis
 import pygame
+import pyAudioAnalysis
 
 # Initialize Pygame and turtle
 turtle.setup(width=800,height=600)
@@ -114,8 +114,6 @@ def play_music():
 		while pygame.mixer.music.get_busy():
 				pygame.time.Clock().tick(10)
 
-		# Quit Pygame
-		pygame.quit()
 
 
 			
@@ -176,5 +174,5 @@ if __name__ == "__main__":
 	main()
 
 main.mainloop()
-pygame.quit()
+
 
